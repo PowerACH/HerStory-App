@@ -16,7 +16,7 @@ function App() {
         {/* <Upload /> */}
         <NavBar />
         <Switch>
-          <Route exact path='/Main' component = {Main} />
+          <Route exact path='/' component = {Main} />
           <Route path='/Login' component = {LogIn} />
           <Route path='/Register' component = {Register} />
           <Route path='/SignedOut' component = {SignedOut} />
