@@ -1,0 +1,46 @@
+.photoContainer {
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    margin-bottom: 60px;
+    margin-left : 20%;
+    margin-right: 20%;
+  }
+  .postUser {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+  }
+  .postProfileImg {
+    width: 30px;
+    height: 30px;
+  }
+  .postProfileImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .postUserName {
+    margin-left: 12px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+  }
+  .imagePostImage {
+    background-color: #efefef;
+  }
+  .imagePost img {
+    display: block;
+    width: 100%;
+  }
+  .caption {
+    padding: 16px 16px;
+  }
+  .caption strong {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+  }
+  .vjs-fade-out {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }

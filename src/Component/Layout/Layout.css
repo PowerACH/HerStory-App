@@ -1,0 +1,21 @@
+body {
+    background-color: lightgray;
+}
+
+.Navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.space {
+    height: 100px;
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.Navbar {
+    font-family: Orbitron;
+}
+
