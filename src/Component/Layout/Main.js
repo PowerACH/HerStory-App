@@ -2,11 +2,12 @@ import React from 'react';
 import NavBar from './NavBar'
 import Post from '../Posts/Post'
 import SignedOutNavBar from './SignedOut'
+import { connect } from 'react-redux' //connect dashboard component with redux
 // import Profile from '../User/UserProfile'
-// import { connect } from 'react-redux'
 
-export default class Main extends React.Component {
+class Main extends React.Component {
     render() {
+        console.log(this.props)
         return (
             <div>
                 <SignedOutNavBar />
@@ -22,3 +23,11 @@ export default class Main extends React.Component {
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        posts: state.post
+    }
+}
+
+export default connect()(Main)
