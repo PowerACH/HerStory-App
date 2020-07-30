@@ -7,9 +7,9 @@ import { connect } from 'react-redux' //connect dashboard component with redux
 
 class Main extends React.Component {
     render() {
-        // console.log(this.props)
+        console.log(this.props)
         const { posts } = this.props
-        
+
         return (
             <div>
                 <SignedOutNavBar />
@@ -19,7 +19,7 @@ class Main extends React.Component {
                     
                 </div>
                 <div>
-                    <Post /> 
+                    <Post posts={posts} /> 
                 </div>
             </div>
         )

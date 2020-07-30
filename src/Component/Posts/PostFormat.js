@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PostFormat = (post) => {
+const PostFormat = ({post}) => {
     return (
         <article className = "photoContainer">
                 <header>

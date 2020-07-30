@@ -11,8 +11,12 @@ const Post = ({posts}) => {
             <div>
                 {
                     posts.map(post => {
+                        console.log(post.userImage)
                     return (
+                        <div>
+                        {/* <div>{post.username}</div> */}
                     <PostFormat post={post} key={post.id} />
+                    </div>
                     )
                 })}
             </div>
