@@ -3,13 +3,15 @@ import './Post.css';
 import PostData from './data.json'
 
     
-export default class Post extends React.Component {
+// export default class Post extends React.Component {
+const Post = (posts) => {
 
-    render() {
+    // render() {
         return (
             <div>
-        {PostData.map((details, i) => {
-            return <article className = "photoContainer" key={i}>
+        {posts && posts.map((post, i) => {
+            return 
+            <article className = "photoContainer" key={i}>
                 <header>
                     <div className = "postUser">
                         <div className = "postProfileImg">
@@ -32,5 +34,5 @@ export default class Post extends React.Component {
         })}
             </div>
         )
-    }
+    // }
 }

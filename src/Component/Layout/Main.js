@@ -7,7 +7,9 @@ import { connect } from 'react-redux' //connect dashboard component with redux
 
 class Main extends React.Component {
     render() {
-        console.log(this.props)
+        // console.log(this.props)
+        const { posts } = this.props
+        
         return (
             <div>
                 <SignedOutNavBar />
@@ -26,8 +28,8 @@ class Main extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        posts: state.post
+        posts: state.post.posts
     }
 }
 
-export default connect()(Main)
+export default connect(mapStateToProps)(Main)
