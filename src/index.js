@@ -11,10 +11,10 @@ import { Provider } from 'react-redux' //binder of react and redux
 //pass root reducer inside 'createStore' reducer
 const store = createStore(rootReducer);
 
-
+// import Provider so App has access to the store
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={store}> 
     <App />
     </Provider>
   </React.StrictMode>,
