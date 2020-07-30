@@ -30,7 +30,14 @@ export default class ProfileSummary extends React.Component {
         })
         return (
             <div className = "profile">
-            <div className = "profileTop">   
+            <div className = "profileTop">
+            <Container>
+                <Row>
+                    <Col xs={6} md={4}>
+                    <Image src="holder.js/171x180" rounded />
+                    </Col>
+                </Row>
+            </Container>   
             </div>
             <div classname = "Grid">
                 <Container>
