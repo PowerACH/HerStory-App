@@ -1,8 +1,10 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap'
 import '../Login/login.css'
+import { connect } from 'react-redux';
+import { createPost } from '../../store/actions/postActions'
 
-export default class CreatePost extends React.Component {
+class CreatePost extends React.Component {
     constructor() {
         super ();
             this.state = {
@@ -18,8 +20,8 @@ export default class CreatePost extends React.Component {
     }
 
     handleSubmit = event => {
-        console.log(this.state)
         event.preventDefault();
+        this.props.createPost(this.state)
     }
 
     render() {
@@ -57,3 +59,10 @@ export default class CreatePost extends React.Component {
         )
     }
 }
+const mapDispatchToProps = (dispatch) => {
+    return {
+        createPost: (post) => dispatch(createPost(post))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(CreatePost);
